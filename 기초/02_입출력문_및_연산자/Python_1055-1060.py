@@ -30,3 +30,20 @@ if a2==b2: print(1)
 else: print(0)
 # ii 
 int(a2==b2)
+
+
+# 1058: 둘 다 거짓일 경우만 참 출력하기
+a,b = map(int, input().split())
+a2 = bool(a)
+b2 = bool(b)
+print(int(not(a2 or b2)))
+
+
+# 1059: 비트단위로 NOT 하여 출력하기
+a = int(input())
+print(~a)
+
+
+# 1060: 비트단위로 AND 하여 출력하기
+a, b = map(int, input().split())
+print(a&b)
