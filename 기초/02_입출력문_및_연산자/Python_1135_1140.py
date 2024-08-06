@@ -15,4 +15,18 @@ else: print(1)
 
 # 1138: 논리 연산자(NOT)
 a = int(input())
-print(!a)
+print(int(not a))
+
+# 1139: 논리 연산자(AND)
+a, b = map(int, input().split())
+if a and b: print(1)
+else: print(0)
+
+# 1140: 논리 연산자(OR)
+a, b = map(int, input().split())
+if a or b: print(1)
+else: print(0)
+
+
+
+
