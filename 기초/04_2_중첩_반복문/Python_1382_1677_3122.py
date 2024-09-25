@@ -22,19 +22,23 @@ for i in range(1, 10):
 
 # 1677: 종이 자르기
 n, m = map(int, input().split())
-if m%2==0:
-    for i in range(m+1):
-        if i == 0 or i == m:
-            print(f'+{(n-2)*'-'}+')
-        elif i%2!=0:
-            print(f'|{' '*(n-1)}|')
-        else: 
-            print()
-else:
-    for i in range(m):
-        if i == 0 or i == m:
-            print(f'+{(n-2)*'-'}+')
-        elif i%2!=0:
-            print(f'|{' '*(n-1)}|')
-        else: 
-            print()
+for i in range(m):
+    if i == 0 or i == m-1:
+        re = (n-2)*'-'
+        print(f'+{re}+')
+    else:
+        re = ' '*(n-2)
+        print(f'|{re}|') 
+
+
+# 3122: 마름모 출력하기 2
+n = int(input())
+pl = 0
+for i in range(1, n+1):
+    print(' '*(n-i), end ='')
+    print('*'*(pl+i), end ='')
+    print('*'*(i-1))
+for i in range(n-1, 0, -1):
+    print(' '*(n-i), end ='')
+    print('*'*(pl+i), end ='')
+    print('*'*(i-1))
