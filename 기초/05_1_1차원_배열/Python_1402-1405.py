@@ -16,7 +16,7 @@ for i in range(2):
 # 1405: 숫자 로테이션
 n = input()
 inp = input().split()
-for i in range(5):
+for i in range(int(n)):
     for j in inp:
         print(j, end = ' ')
     print()
