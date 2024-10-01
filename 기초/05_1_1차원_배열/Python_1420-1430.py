@@ -13,6 +13,9 @@ for i, j in li:
 
 
 # 1425: 자리 배치
+# ------------------------------------# 
+# i
+# ------------------------------------#
 N, C = map(int, input().split())
 inp = input().split()
 inp.sort()
@@ -22,6 +25,20 @@ for i in range(1, N+1):
         print(inp[i-1], end =' ')
     else:
         print(inp[i-1], end =' ')
+
+# ------------------------------------# 
+# ii
+# ------------------------------------#
+n,c = map(int, input().split())
+students = list(map(int, input().split()))
+students.sort()
+
+for i in range(0, int(n/c)+1):
+    for j in range(i*c, i*c+c):
+        if j >= len(students):
+            break
+        print(students[j], end =' ')
+    print()
 
 
 # 1430: 기억력 테스트 2
